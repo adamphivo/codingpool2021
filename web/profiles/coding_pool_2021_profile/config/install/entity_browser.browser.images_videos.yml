@@ -1,0 +1,61 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.eb_media
+  module:
+    - entity_browser_entity_form
+    - views
+name: images_videos
+label: 'Images et Vidéos'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: Sélectionner
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  92dab2af-7066-4f4f-82f5-fea969f77763:
+    settings:
+      view: eb_media
+      view_display: entity_browser_1
+      submit_text: Sélectionner
+      auto_select: false
+    uuid: 92dab2af-7066-4f4f-82f5-fea969f77763
+    weight: 1
+    label: 'Bibliothèque des images'
+    id: view
+  b292a090-c33b-4c6a-b6ca-90f777caeca4:
+    settings:
+      view: eb_media
+      view_display: entity_browser_2
+      submit_text: Sélectionner
+      auto_select: false
+    uuid: b292a090-c33b-4c6a-b6ca-90f777caeca4
+    weight: 2
+    label: 'Bibliothèque des vidéos Youtube'
+    id: view
+  6de8378e-dc45-40e9-ad2b-dcc0e28bcdae:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: Enregistrer
+    uuid: 6de8378e-dc45-40e9-ad2b-dcc0e28bcdae
+    weight: 3
+    label: 'Ajouter une image'
+    id: entity_form
+  d6765be9-dee3-439d-a7f5-4d86154444b6:
+    settings:
+      entity_type: media
+      bundle: video_youtube
+      form_mode: default
+      submit_text: Enregistrer
+    uuid: d6765be9-dee3-439d-a7f5-4d86154444b6
+    weight: 4
+    label: 'Ajouter une vidéo Youtube'
+    id: entity_form

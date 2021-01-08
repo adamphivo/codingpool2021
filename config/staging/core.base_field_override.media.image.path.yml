@@ -1,0 +1,22 @@
+uuid: dd3da973-b8ed-4670-ad4c-ac74b1d0ad02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - path
+_core:
+  default_config_hash: ysfObSZLPYfNUFkqKUcD1jBYBr-r7byoO_PrbCsTsas
+id: media.image.path
+field_name: path
+entity_type: media
+bundle: image
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

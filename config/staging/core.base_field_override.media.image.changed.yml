@@ -1,0 +1,20 @@
+uuid: 6971e276-ccd5-46e8-a8c2-a128009b9cbe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+_core:
+  default_config_hash: X8N7cy7T6KnWPAEiHkusX5J6xVDUw669l6nCoLDK3Mk
+id: media.image.changed
+field_name: changed
+entity_type: media
+bundle: image
+label: Modifié
+description: 'Date à laquelle cet élément de média a été modifié.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

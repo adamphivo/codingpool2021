@@ -1,0 +1,21 @@
+##
+# Main library
+##
+main:
+  css:
+    theme:
+      assets/build/css/screen.css: {}
+      assets/build/css/print.css: {media: print}
+  js:
+    assets/build/js/main.js: {weight: -1, minified: true}
+  dependencies:
+    - core/jquery
+
+##
+# Video Players
+##
+video_players:
+  js:
+    assets/build/js/videoPlayer.js: {}
+  dependencies:
+    - tac_services/youtube_api

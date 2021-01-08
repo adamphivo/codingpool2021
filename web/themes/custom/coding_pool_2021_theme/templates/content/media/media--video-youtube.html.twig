@@ -1,0 +1,14 @@
+{{ attach_library('coding_pool_2021_theme/video_players') }}
+<div class="MediaVideo MediaVideo--youtube">
+  <div class="MediaVideo-wrapper">
+    <div class="MediaVideo-img">
+      {# @TODO change markup and Image style according to design #}
+      {{ buildImageTagFromMedia(media, {
+        'image_style' : 'teaser_media_entity_browser'
+      }) }}
+    </div>
+
+    <div id="MediaVideo-{{ media.id }}" class="Video-player Video-player--youtube" data-video-id="{{ media.field_video_youtube.0.id }}"></div>
+    <div class="MediaVideo-player"></div>
+  </div>
+</div>

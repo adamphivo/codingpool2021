@@ -1,0 +1,20 @@
+uuid: 9107653a-1299-427a-8909-4dd5dc4de427
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+_core:
+  default_config_hash: tyzRK-PXC5qEnjMhgAa4BVzX9LGFyx2QK1FFD8RKGhE
+id: media.image.metatag
+field_name: metatag
+entity_type: media
+bundle: image
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,7 @@
+coding_pool_2021_home.home:
+  path: '/front'
+  defaults:
+    _controller: coding_pool_2021_home.home_controller:content
+    _title: 'Accueil'
+  requirements:
+    _permission: 'access content'

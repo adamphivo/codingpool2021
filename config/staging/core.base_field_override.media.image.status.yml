@@ -1,0 +1,24 @@
+uuid: abdd187d-950a-4b43-ac6c-c795c12554d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+_core:
+  default_config_hash: iTkS4adttjbRuWQFtswyQBc3TQFBctpHZOXrH-Zt-fI
+id: media.image.status
+field_name: status
+entity_type: media
+bundle: image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

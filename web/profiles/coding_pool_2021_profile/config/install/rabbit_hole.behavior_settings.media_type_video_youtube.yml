@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.video_youtube
+id: media_type_video_youtube
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301

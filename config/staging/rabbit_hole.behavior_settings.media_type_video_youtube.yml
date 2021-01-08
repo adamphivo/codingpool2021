@@ -1,0 +1,14 @@
+uuid: 31571c46-36ce-4f11-b1c2-6633d94c3f3e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2jKHc8PUcFkFoaNHgigCdXC_r1g8YHkFZ_s8Z4x7_v8
+id: media_type_video_youtube
+entity_type_id: null
+entity_id: null
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: null

@@ -1,0 +1,95 @@
+.ui-dialog {
+  z-index: 999999 !important;
+  max-width: 90% !important;
+}
+
+.layout-node-form > .layout-region {
+  float: none;
+  width: 100%;
+}
+
+.paragraphs-subform > * {
+  margin-top: 20px;
+}
+
+
+/* Entity Browser */
+body .entities-list .item-container{
+  display: flex;
+  position: relative;
+  right: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0 20px 100px;
+  margin: 2px 0;
+}
+
+body .entities-list .item-container:only-child {
+  border-bottom: none;
+}
+
+body .entities-list .item-container:only-child:before {
+  background: none;
+}
+
+body .entities-list .item-container:hover {
+  background: #eee;
+}
+
+body .entities-list .item-container::before{
+  content:'';
+  background: url('../icons/draggable.png') no-repeat center;
+  background-size:75%;
+  width:30px;
+  height:30px;
+  position:absolute;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%);
+}
+body  .entities-list .node{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .entities-list .node > *{
+  margin: 0 10px;
+}
+body .entities-list .item-container input {
+  display:block;
+  position:absolute;
+  text-indent:-999em;
+  height:42px;
+  border-radius:0;
+  margin:0;
+  border:none;
+  top:50%;
+  transform:translateY(-50%);
+}
+/* Delete Button */
+body .entities-list .item-container input.button:first-of-type {
+  background: url('../icons/delete.png') no-repeat center;
+  background-size: 75%;
+  right:20px;
+}
+/* Modify Button */
+body .entities-list .item-container input.button:last-child {
+  background: url('../icons/edit.png') no-repeat center;
+  background-size: 75%;
+  right:80px;
+}
+
+
+
+
+[style*="contrib/entity_embed/js/plugins/drupalentity/entity.png"] {
+  background-image: url("/core/modules/ckeditor/js/plugins/drupalimage/icons/drupalimage.png") !important;
+}
+
+
+
+.select2-container {
+  min-width: 177px;
+}
+.select2-container--open{
+  z-index: 1000000;
+}

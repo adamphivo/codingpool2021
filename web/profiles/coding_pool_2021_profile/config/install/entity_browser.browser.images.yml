@@ -1,0 +1,41 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.eb_media
+  module:
+    - views
+name: images
+label: Images
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: Sélectionner
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  10427657-c63e-43e4-9063-98f5676abb19:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://images'
+      multiple: '1'
+      submit_text: Ajouter
+    uuid: 10427657-c63e-43e4-9063-98f5676abb19
+    weight: -9
+    label: 'Nouvelle(s) image(s)'
+    id: media_image_upload
+  3a0724e4-86e6-45a4-ac17-ba4987fa3c5a:
+    settings:
+      view: eb_media
+      view_display: entity_browser_1
+      submit_text: Sélectionner
+      auto_select: false
+    uuid: 3a0724e4-86e6-45a4-ac17-ba4987fa3c5a
+    weight: -10
+    label: 'Bibliothèque des images'
+    id: view

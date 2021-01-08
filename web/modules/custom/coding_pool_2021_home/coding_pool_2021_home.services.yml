@@ -1,0 +1,16 @@
+services:
+
+  #HomeManager
+  coding_pool_2021_home.home_manager:
+    class: Drupal\coding_pool_2021_home\Manager\HomeManager
+    arguments: ['@entity_type.manager','@adimeo_tools.language','@coding_pool_2021_home.home_gateway']
+
+  #HomeGateway
+  coding_pool_2021_home.home_gateway:
+    class: Drupal\coding_pool_2021_home\Gateway\HomeGateway
+    arguments: ['@entity_type.manager','@adimeo_tools.language']
+
+  #FrontPageController
+  coding_pool_2021_home.home_controller:
+    class: Drupal\coding_pool_2021_home\Controller\FrontPageController
+    arguments: ['@coding_pool_2021_home.home_manager']

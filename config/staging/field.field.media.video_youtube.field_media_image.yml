@@ -1,0 +1,40 @@
+uuid: ca375b3b-916a-4c3c-9272-5857dabe9d98
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image
+    - media.type.video_youtube
+  module:
+    - image
+_core:
+  default_config_hash: tfK1XGLGjQRQseidPyalj3yP5S62_cmip55Pa6Q3k5g
+id: media.video_youtube.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: video_youtube
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: media/video_youtube
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

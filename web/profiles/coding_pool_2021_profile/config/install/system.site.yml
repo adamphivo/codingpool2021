@@ -1,0 +1,11 @@
+name: 'Coding Pool 2021'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
