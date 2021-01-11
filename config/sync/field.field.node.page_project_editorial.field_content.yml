@@ -1,0 +1,21 @@
+uuid: c3e4d7f5-880a-40f2-94aa-87b21797f98e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page_project_editorial
+id: node.page_project_editorial.field_content
+field_name: field_content
+entity_type: node
+bundle: page_project_editorial
+label: Contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,67 @@
+uuid: 801316e7-1140-422e-b9fb-441bedb38bd7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page_project_editorial.field_artwork
+    - field.field.node.page_project_editorial.field_chapo
+    - field.field.node.page_project_editorial.field_content
+    - field.field.node.page_project_editorial.field_edipro_content
+    - field.field.node.page_project_editorial.field_thematic
+    - node.type.page_project_editorial
+  module:
+    - entity_reference_revisions
+    - user
+id: node.page_project_editorial.default
+targetEntityType: node
+bundle: page_project_editorial
+mode: default
+content:
+  field_artwork:
+    type: entity_reference_entity_view
+    weight: 101
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_chapo:
+    weight: 102
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_content:
+    weight: 104
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_edipro_content:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_thematic:
+    weight: 103
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

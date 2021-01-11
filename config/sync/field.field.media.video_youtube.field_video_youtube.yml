@@ -1,0 +1,23 @@
+uuid: a98abad7-45ed-4848-93e4-4a80aa72dc48
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_youtube
+    - media.type.video_youtube
+  module:
+    - media_enhancement
+_core:
+  default_config_hash: q2oNshA6Elr-UnfDUvm0d6SVzY73pGlRV9ernV6yC5A
+id: media.video_youtube.field_video_youtube
+field_name: field_video_youtube
+entity_type: media
+bundle: video_youtube
+label: 'Url de la vidéo Youtube'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: video_field_type

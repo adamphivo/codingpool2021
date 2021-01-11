@@ -1,0 +1,29 @@
+uuid: 3410511b-e3c5-45c0-91d8-15b28e64bafb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematic
+    - node.type.page_project_editorial
+    - taxonomy.vocabulary.thematics
+id: node.page_project_editorial.field_thematic
+field_name: field_thematic
+entity_type: node
+bundle: page_project_editorial
+label: Thématique
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thematics: thematics
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

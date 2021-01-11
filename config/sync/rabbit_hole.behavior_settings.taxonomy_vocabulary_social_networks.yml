@@ -1,0 +1,14 @@
+uuid: 41c6c531-ba13-4d48-8d13-323b0970770a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_networks
+id: taxonomy_vocabulary_social_networks
+entity_type_id: taxonomy_vocabulary
+entity_id: social_networks
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

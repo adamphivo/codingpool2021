@@ -1,0 +1,14 @@
+name: 'Coding Pool 2021'
+mail: adamphivo@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: EgfMlYnWU07-7xn14tWBceQDSYJvuJmHHH-xb8CbUHc
+uuid: deac82c0-d94f-4f4b-8db6-ef8d8604c940

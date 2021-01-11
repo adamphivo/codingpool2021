@@ -35,7 +35,9 @@ $config['system.performance']['js']['preprocess'] = TRUE;
 #@todo test on preprod first
 #$settings['cache']['bins']['page'] = 'cache.backend.null';
 
-$settings['config_sync_directory'] = '../config/staging';
+$settings['config_sync_directory'] = '../config/sync';
+$settings['config_exclude_modules'] = ['devel', 'devel_generate', 'dblog','stage_file_proxy','kint'];
+
 $config['system.logging']['error_level'] = 'hide'; //hide, some, all, verbose
 // Réautorisation de certaines fonctions twig utiles.
 $settings['twig_sandbox_whitelisted_methods'] = [

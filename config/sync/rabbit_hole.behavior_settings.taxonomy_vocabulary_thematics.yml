@@ -1,0 +1,14 @@
+uuid: 9f1ec89f-755c-44ee-bfc9-6b25c54b865f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thematics
+id: taxonomy_vocabulary_thematics
+entity_type_id: taxonomy_vocabulary
+entity_id: thematics
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

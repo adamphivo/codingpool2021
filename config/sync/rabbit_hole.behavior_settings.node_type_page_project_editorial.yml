@@ -1,0 +1,14 @@
+uuid: 3dd2a955-a041-411d-8c7b-a73782822047
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_project_editorial
+id: node_type_page_project_editorial
+entity_type_id: node_type
+entity_id: page_project_editorial
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

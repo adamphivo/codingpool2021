@@ -1,0 +1,29 @@
+uuid: 3750536a-d981-4454-a09d-4c7ccdfd2ea4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_visual
+    - media.type.image
+    - paragraphs.paragraphs_type.para_call_to_action
+id: paragraph.para_call_to_action.field_visual
+field_name: field_visual
+entity_type: paragraph
+bundle: para_call_to_action
+label: Visuel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

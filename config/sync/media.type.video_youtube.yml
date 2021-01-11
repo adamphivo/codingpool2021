@@ -1,0 +1,15 @@
+uuid: 89e62cc5-2b1d-418a-8dc6-cad5bc185ce4
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SM5ixdPJ683x1DOdPemhBLrCgNSiEWZ3O5lKH_4r-LY
+id: video_youtube
+label: 'Vidéo Youtube'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

@@ -1,0 +1,16 @@
+uuid: 3e364f1f-02fb-427a-95a5-26f2a41cc0b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partenaires
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.partenaires
+target_entity_type_id: taxonomy_term
+target_bundle: partenaires
+default_langcode: site_default
+language_alterable: true

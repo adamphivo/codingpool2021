@@ -1,0 +1,39 @@
+uuid: a8f467c5-e3a2-480e-8501-9c13864aaea0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.para_see_also.field_bloc_description
+    - field.field.paragraph.para_see_also.field_references
+    - field.field.paragraph.para_see_also.field_title
+    - paragraphs.paragraphs_type.para_see_also
+id: paragraph.para_see_also.default
+targetEntityType: paragraph
+bundle: para_see_also
+mode: default
+content:
+  field_bloc_description:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_references:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

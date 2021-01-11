@@ -1,0 +1,31 @@
+uuid: 0d3d9231-4baf-4d04-be99-9feb344647cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.para_media.field_media
+    - field.field.paragraph.para_media.field_title
+    - paragraphs.paragraphs_type.para_media
+id: paragraph.para_media.default
+targetEntityType: paragraph
+bundle: para_media
+mode: default
+content:
+  field_media:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

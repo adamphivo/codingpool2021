@@ -1,0 +1,63 @@
+uuid: 871f19af-d884-4499-aaee-5a56b5e94b76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.para_call_to_action.field_link
+    - field.field.paragraph.para_call_to_action.field_title
+    - field.field.paragraph.para_call_to_action.field_visual
+    - paragraphs.paragraphs_type.para_call_to_action
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_call_to_action:
+      children:
+        - field_title
+        - field_link
+        - field_visual
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Invite le visiteur à cliquer sur un lien.'
+        required_fields: true
+      label: 'Call To Action'
+id: paragraph.para_call_to_action.default
+targetEntityType: paragraph
+bundle: para_call_to_action
+mode: default
+content:
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_visual:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

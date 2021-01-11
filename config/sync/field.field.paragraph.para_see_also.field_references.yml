@@ -1,0 +1,29 @@
+uuid: cd9dd69c-1093-4ad7-861b-ab70fc60b36d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_references
+    - node.type.page_project_editorial
+    - paragraphs.paragraphs_type.para_see_also
+id: paragraph.para_see_also.field_references
+field_name: field_references
+entity_type: paragraph
+bundle: para_see_also
+label: Remontée
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page_project_editorial: page_project_editorial
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: eeb39f2b-5d26-4cc5-9929-5b27fc059d8c
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ncbdIV7BDEwpszhTAzf3sprM_YqVoRFUw5C8aDgz_Ak
+id: media_type_image
+entity_type_id: null
+entity_id: null
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: null

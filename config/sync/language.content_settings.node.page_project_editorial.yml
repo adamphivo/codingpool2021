@@ -1,0 +1,16 @@
+uuid: 29fd5d37-cc69-45fd-b6e1-049dc262aa88
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_project_editorial
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.page_project_editorial
+target_entity_type_id: node
+target_bundle: page_project_editorial
+default_langcode: site_default
+language_alterable: true

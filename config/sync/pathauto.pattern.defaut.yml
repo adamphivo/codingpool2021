@@ -1,0 +1,16 @@
+uuid: ac6537e5-deab-4a17-89e0-a11e201c8299
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: k0AXWOPxTmVZfVvEAaVqVEQdMryahSHvAZQiThfAey0
+id: defaut
+label: Defaut
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

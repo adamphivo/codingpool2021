@@ -1,0 +1,21 @@
+uuid: ff4847e6-91d4-4ef2-ad58-9eae3e0646c5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - media_enhancement
+_core:
+  default_config_hash: UKFNHXJVEuJ1u2YxRQEmDmd-v_xRoct4nSe7f9YdNVk
+id: media.field_video_youtube
+field_name: field_video_youtube
+entity_type: media
+type: video_field_type
+settings: {  }
+module: media_enhancement
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

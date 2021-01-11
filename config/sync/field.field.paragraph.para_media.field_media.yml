@@ -1,0 +1,31 @@
+uuid: 97a373d6-59cb-4aba-826c-2b41c25908d2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - media.type.video_youtube
+    - paragraphs.paragraphs_type.para_media
+id: paragraph.para_media.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: para_media
+label: Média
+description: 'L''image ou la vidéo affichée.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video_youtube: video_youtube
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

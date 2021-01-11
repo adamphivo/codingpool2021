@@ -1,0 +1,31 @@
+uuid: ac5023fb-563a-4d6c-9642-9480cc353e93
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_project_editorial.field_artwork
+    - field.field.node.page_project_editorial.field_chapo
+    - field.field.node.page_project_editorial.field_content
+    - field.field.node.page_project_editorial.field_edipro_content
+    - field.field.node.page_project_editorial.field_thematic
+    - node.type.page_project_editorial
+  module:
+    - user
+id: node.page_project_editorial.teaser
+targetEntityType: node
+bundle: page_project_editorial
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_artwork: true
+  field_chapo: true
+  field_content: true
+  field_edipro_content: true
+  field_thematic: true
+  langcode: true

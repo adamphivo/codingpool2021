@@ -1,0 +1,21 @@
+uuid: 431eccf8-d3fa-4f64-9217-797d72871fb3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rich_text
+    - paragraphs.paragraphs_type.para_rich_text
+  module:
+    - text
+id: paragraph.para_rich_text.field_rich_text
+field_name: field_rich_text
+entity_type: paragraph
+bundle: para_rich_text
+label: 'Texte Riche'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

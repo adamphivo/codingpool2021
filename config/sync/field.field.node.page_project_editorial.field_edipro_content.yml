@@ -1,0 +1,38 @@
+uuid: 74b7ce09-a71e-423d-8da7-f857737ee810
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edipro_content
+    - node.type.page_project_editorial
+  module:
+    - entity_reference_revisions
+id: node.page_project_editorial.field_edipro_content
+field_name: field_edipro_content
+entity_type: node
+bundle: page_project_editorial
+label: Contenu
+description: "Le contenu de votre page sous forme de paragraphs.\r\nLes paragraphs sont des sous-blocks de contenus."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      call_to_action:
+        weight: 5
+        enabled: false
+      para_media:
+        weight: 6
+        enabled: false
+      para_rich_text:
+        weight: 7
+        enabled: false
+      para_see_also:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

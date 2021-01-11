@@ -1,0 +1,19 @@
+uuid: acedded1-089c-4375-9542-020d2ffc8a99
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.para_see_also
+id: paragraph.para_see_also.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: para_see_also
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

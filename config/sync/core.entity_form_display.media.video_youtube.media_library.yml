@@ -1,0 +1,40 @@
+uuid: 870352b9-15e6-4f4a-9318-bbb3c4189c11
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.video_youtube.field_media_image
+    - field.field.media.video_youtube.field_video_youtube
+    - image.style.thumbnail
+    - media.type.video_youtube
+  module:
+    - image
+id: media.video_youtube.media_library
+targetEntityType: media
+bundle: video_youtube
+mode: media_library
+content:
+  field_media_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_video_youtube: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

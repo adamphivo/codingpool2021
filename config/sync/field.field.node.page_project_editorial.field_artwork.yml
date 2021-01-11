@@ -1,0 +1,29 @@
+uuid: fc154be4-15a5-460e-a007-6a6719e15737
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artwork
+    - media.type.image
+    - node.type.page_project_editorial
+id: node.page_project_editorial.field_artwork
+field_name: field_artwork
+entity_type: node
+bundle: page_project_editorial
+label: Visuel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

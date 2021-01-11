@@ -1,0 +1,19 @@
+uuid: 761598b2-c8cf-482f-bd62-18fd0c575b55
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - taxonomy.vocabulary.social_networks
+id: taxonomy_term.social_networks.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: social_networks
+label: Icone
+description: 'Logo du partenaire.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

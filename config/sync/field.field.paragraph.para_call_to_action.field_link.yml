@@ -1,0 +1,23 @@
+uuid: 8648b88a-e9dc-40f3-a900-d6ac821d7e0a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.para_call_to_action
+  module:
+    - link
+id: paragraph.para_call_to_action.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: para_call_to_action
+label: Lien
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

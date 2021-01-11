@@ -1,0 +1,22 @@
+uuid: b933b7b3-d0a8-4aeb-a5f4-ceeec8bfa762
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.para_rich_text.field_rich_text
+    - paragraphs.paragraphs_type.para_rich_text
+  module:
+    - text
+id: paragraph.para_rich_text.default
+targetEntityType: paragraph
+bundle: para_rich_text
+mode: default
+content:
+  field_rich_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

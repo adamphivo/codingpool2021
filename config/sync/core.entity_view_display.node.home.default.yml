@@ -1,0 +1,22 @@
+uuid: 51468b4c-4590-4999-9c5e-7e5acd046723
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.home
+  module:
+    - user
+_core:
+  default_config_hash: lsaj9qVvaKVEeV-ppDsifJ_FIuNuY4bgxxFyuuK2JL4
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: e0235ce5-2f2f-4283-9b74-cb56dcdb7ea8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_url
+    - taxonomy.vocabulary.social_networks
+  module:
+    - link
+id: taxonomy_term.social_networks.field_url
+field_name: field_url
+entity_type: taxonomy_term
+bundle: social_networks
+label: Url
+description: 'Lien vers le site du partenaire.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link
