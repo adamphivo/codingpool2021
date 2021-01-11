@@ -29,7 +29,7 @@
 # Ignore Docker volumes
 /docker/volumes
 
-*.sql
+# *.sql
 *.gz
 *.tar
 *.zip

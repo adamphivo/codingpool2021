@@ -18,9 +18,6 @@ services:
   php:
     image: wodby/drupal-php:$PHP_TAG
     container_name: "${PROJECT_NAME}_php"
-    networks:
-      - adimeo_docker_local_proxy
-      - default
     environment:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S ${PROJECT_NAME}_mailhog:1025
       #      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S opensmtpd:25
@@ -40,10 +37,9 @@ services:
     #      SIMPLETEST_DB: "${DB_DRIVER}://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}#tests_"
     #      MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","goog:chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www/html:cached
       - ~/.ssh:/root/.ssh:ro
       - ~/.composer/auth.json:/root/.composer/auth.json
-      - ~/.composer/auth.json:/home/wodby/.composer/auth.json
   ## For XHProf and Xdebug profiler traces
   #    - files:/mnt/files
 
@@ -54,13 +50,13 @@ services:
       CRONTAB: "0 * * * * drush -r /var/www/html/web cron"
     command: sudo -E LD_PRELOAD=/usr/lib/preloadable_libiconv.so crond -f -d 0
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www/html:cached
 
   nginx:
     image: wodby/nginx:$NGINX_TAG
     container_name: "${PROJECT_NAME}_nginx"
     networks:
-      - adimeo_docker_local_proxy
+      - adimeo_local_proxy
       - default
     depends_on:
       - php
@@ -72,7 +68,7 @@ services:
       NGINX_VHOST_PRESET: $NGINX_VHOST_PRESET
     #  NGINX_DRUPAL_FILE_PROXY_URL: http://example.com
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www/html:cached
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_nginx.entrypoints=http"
       - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
@@ -81,16 +77,22 @@ services:
       - "traefik.http.routers.${PROJECT_NAME}_nginx-secure.entrypoints=https"
       - "traefik.http.routers.${PROJECT_NAME}_nginx-secure.rule=Host(`${PROJECT_BASE_URL}`)"
       - "traefik.http.routers.${PROJECT_NAME}_nginx-secure.tls=true"
+      - "traefik.docker.network=adimeo_local_proxy"
 
   mailhog:
     image: mailhog/mailhog
     container_name: "${PROJECT_NAME}_mailhog"
     networks:
-      - adimeo_docker_local_proxy
+      - adimeo_local_proxy
       - default
     labels:
       - "traefik.http.services.${PROJECT_NAME}_mailhog.loadbalancer.server.port=8025"
       - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
+      - "traefik.docker.network=adimeo_local_proxy"
+
+  #  redis:
+  #    container_name: "${PROJECT_NAME}_redis"
+  #    image: wodby/redis:$REDIS_TAG
 
   #  redis:
   #    container_name: "${PROJECT_NAME}_redis"
@@ -133,5 +135,5 @@ volumes:
 #  files:
 
 networks:
-  adimeo_docker_local_proxy:
+  adimeo_local_proxy:
     external: true
