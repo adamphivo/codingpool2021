@@ -26,6 +26,9 @@
 # Ignore .env files as they are personal
 /.env
 
+# Ignore vscode folder
+/.vscode
+
 # Ignore Docker volumes
 /docker/volumes
 
